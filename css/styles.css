@@ -5,8 +5,8 @@
 body {
     font-family: "Roboto", sans-serif;
     font-family: inherit;
-    background: 1600px var(--fourth-color);
-    background: inherit;
+    background: var(--fourth-color) inherit;
+    width: 1600px;
 }
 :root {
     --first-color: #2196f3;
@@ -50,6 +50,10 @@ body {
 .nav-items:focus,
 .nav-items:active {
     color: var(--first-color);
+}
+.item {
+    width: 270px;
+    height: 101px;
 }
 
 .contact-links {
@@ -188,26 +192,26 @@ h1 {
 }
 
 .section-header {
-    max-width: 1600px;
     border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: center;
 }
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .header-container {
+    width: 1200px;
     height: 80px;
     display: flex;
-    justify-content: space-between;
-    margin: 0;
+    justify-content: center;
 }
 .logo-header {
     width: 145px;
     height: 31px;
     margin-top: 24px;
-    margin-left: 215px;
     margin-bottom: 25px;
     margin-right: 93px;
 }
@@ -229,12 +233,31 @@ nav {
 .nav-menu > .nav-list:not(:last-child) {
     margin-right: 46px;
 }
-
+.nav-list {
+    height: 16px;
+}
+.first {
+    width: 53px;
+}
+.second {
+    width: 58px;
+}
+.third {
+    width: 51px;
+}
 .contact-list > .contact-items {
     display: flex;
     flex-direction: row;
 }
-
+.contact-items {
+    height: 16px;
+}
+.one {
+    width: 135px;
+}
+.two {
+    width: 110px;
+}
 .contact-list {
     display: flex;
     align-items: center;
@@ -243,13 +266,12 @@ nav {
 .contact-list > .contact-items:not(:last-child) {
     margin-right: 50px;
 }
-.section-main1 {
-    max-width: 1600px;
-}
+
 .header-box {
+    width: 1600px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -267,14 +289,7 @@ nav {
 .list-images > .images:not(:last-child) {
     margin-right: 30px;
 }
-.list-images {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin-top: 50px;
-    margin-bottom: 94px;
-    justify-content: center;
-}
+
 .images {
     width: 370px;
     height: 294px;
@@ -288,7 +303,8 @@ nav {
 }
 
 .header-secondary {
-    text-align: center;
+    width: 352px;
+    height: 42px;
     margin-top: 94px;
     margin-bottom: 50px;
 }
@@ -343,6 +359,7 @@ figure {
 }
 
 .footer-box {
+    width: 1600px;
     height: 252px;
     background-color: var(--fifth-color);
     display: flex;
@@ -389,6 +406,11 @@ figure {
     padding: 0;
     margin: 0 auto;
 }
+.main-page {
+    padding: auto;
+    margin-left: 215px;
+    margin-right: 0;
+}
 .main-container {
     display: flex;
     flex-wrap: wrap;
@@ -404,8 +426,8 @@ figure {
 }
 .grid-items {
     max-width: 370px;
-    border: 1px solid #eeeeee;
 }
+
 .cards {
     max-width: 370px;
     max-height: 404px;
@@ -415,6 +437,9 @@ figure {
     padding: 20px 24px;
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
 }
 
 .card-name {
@@ -425,4 +450,51 @@ figure {
     line-height: 1.8;
     letter-spacing: 0.03em;
     color: var(--third-color);
+}
+.section-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.section-main > .list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 215px;
+    margin-right: auto;
+}
+.section-main1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 215px;
+}
+.header-secondary {
+    margin-left: 409px;
+}
+.list-images {
+    width: 1170px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 94px;
+    padding: 0;
+    margin-top: 50px;
+}
+.team-section {
+    width: 1600px;
+    height: 648px;
+}
+.team-header {
+    width: 209px;
+    height: 42px;
+}
+.team-header {
+    margin-left: 0;
+    margin-right: 0;
+    margin-left: 696px;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
